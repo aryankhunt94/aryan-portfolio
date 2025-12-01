@@ -18,6 +18,7 @@ Follow these steps to deploy your portfolio to Vercel:
     | `GOOGLE_CLIENT_EMAIL` | (From your `credentials.json`) `client_email` |
     | `GOOGLE_PRIVATE_KEY` | (From your `credentials.json`) `private_key` (Copy the whole string including `-----BEGIN PRIVATE KEY...`) |
     | `GOOGLE_SPREADSHEET_ID` | `11YPayNtmyUJbnuaBVzHi8H8_85mvhl0TO_-91uNdQHk` |
+    | `MONGO_URI` | Your MongoDB Connection String (e.g., from MongoDB Atlas) |
 
 4.  **Deploy**:
     *   Click **Deploy**.
