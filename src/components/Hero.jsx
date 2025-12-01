@@ -34,16 +34,18 @@ const Hero = () => {
                     Full Stack <span style={{ color: 'white' }}>Web Developer</span>
                 </p>
                 <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-                    <button className="btn-primary">View Projects</button>
-                    <button style={{
+                    <a href="#projects" className="btn-primary" style={{ textDecoration: 'none' }}>View Projects</a>
+                    <a href="#contact" style={{
                         background: 'transparent',
                         border: '2px solid var(--accent-purple)',
                         color: 'white',
                         padding: '0.8rem 2rem',
                         borderRadius: '50px',
                         fontWeight: '600',
-                        cursor: 'pointer'
-                    }}>Contact Me</button>
+                        cursor: 'pointer',
+                        textDecoration: 'none',
+                        display: 'inline-block'
+                    }}>Contact Me</a>
                 </div>
             </div>
         </section>

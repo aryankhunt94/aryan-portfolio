@@ -9,7 +9,13 @@ const projects = [
         github: 'https://github.com/aryankhunt94/project.git',
         demo: null // Add demo link if available
     },
-    // Add more projects here
+    {
+        title: 'Interactive Calendar',
+        description: 'A dynamic React application combining calendar functionality with creative tools. Features include event management, rich text note-taking, and a drawing canvas for visual planning.',
+        tags: ['React', 'Vite', 'Canvas API', 'Note Taking'],
+        github: 'https://github.com/aryankhunt94/Interactive_calender.git',
+        demo: null
+    },
 ];
 
 const Projects = () => {

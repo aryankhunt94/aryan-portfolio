@@ -1,14 +1,14 @@
 import React from 'react';
 
 const skills = [
-    { name: 'HTML', level: 'Advanced', color: '#E34F26' },
-    { name: 'CSS', level: 'Advanced', color: '#1572B6' },
-    { name: 'JavaScript', level: 'Advanced', color: '#F7DF1E' },
-    { name: 'React', level: 'Intermediate', color: '#61DAFB' },
-    { name: 'SQL', level: 'Intermediate', color: '#4479A1' },
-    { name: 'PL/SQL', level: 'Intermediate', color: '#F80000' },
-    { name: 'C', level: 'Intermediate', color: '#A8B9CC' },
-    { name: 'C++', level: 'Intermediate', color: '#00599C' },
+    { name: 'HTML', level: 'Advanced', color: '#E34F26', percentage: '95%' },
+    { name: 'CSS', level: 'Advanced', color: '#1572B6', percentage: '90%' },
+    { name: 'JavaScript', level: 'Advanced', color: '#F7DF1E', percentage: '85%' },
+    { name: 'React', level: 'Intermediate', color: '#61DAFB', percentage: '80%' },
+    { name: 'SQL', level: 'Intermediate', color: '#4479A1', percentage: '75%' },
+    { name: 'PL/SQL', level: 'Intermediate', color: '#F80000', percentage: '70%' },
+    { name: 'C', level: 'Intermediate', color: '#A8B9CC', percentage: '65%' },
+    { name: 'C++', level: 'Intermediate', color: '#00599C', percentage: '60%' },
 ];
 
 const Skills = () => {
@@ -44,7 +44,10 @@ const Skills = () => {
                                 e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.05)';
                             }}
                         >
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{skill.name}</h3>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                                <h3 style={{ fontSize: '1.5rem' }}>{skill.name}</h3>
+                                <span style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{skill.percentage}</span>
+                            </div>
                             <div style={{
                                 width: '100%',
                                 height: '4px',
@@ -53,7 +56,7 @@ const Skills = () => {
                                 marginTop: '1rem'
                             }}>
                                 <div style={{
-                                    width: '80%', // Placeholder width
+                                    width: skill.percentage,
                                     height: '100%',
                                     background: skill.color,
                                     borderRadius: '2px',
