@@ -1,4 +1,5 @@
 import React from 'react';
+// Updated Projects List
 import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
